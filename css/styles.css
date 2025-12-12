@@ -92,6 +92,7 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
+  background-color: grey;
 }
 
 .header-nav {
@@ -226,8 +227,9 @@ a {
 }
 
 .chefs-title {
+  position: relative;
   margin: 0 auto 80px;
-  max-width: 520px;
+  max-width: 540px;
 }
 
 .chefs-title::before,
@@ -238,9 +240,30 @@ a {
   content: "";
 }
 
+.chefs-title::before {
+  position: absolute;
+  left: -360px;
+  bottom: 24px;
+}
+
+.chefs-title::after {
+  position: absolute;
+  right: -360px;
+  bottom: 24px;
+}
+
+.chef-text {
+  margin-bottom: 24px;
+}
+
+.chef-text:last-child {
+  margin-bottom: 0px;
+}
+
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
+  flex: wrap;
 }
 
 .chefs-item {
@@ -323,7 +346,7 @@ a {
 }
 
 .carousel-button:hover .carousel-arrow {
-  color: var(--color-ptimary--white);
+  fill: var(--color-ptimary--white);
 }
 
 /* contact-section */
@@ -355,6 +378,7 @@ a {
   background-size: cover;
   background-position: center;
   padding: 32px 0;
+  position: relative;
 }
 
 .footer-container {
@@ -400,4 +424,65 @@ a {
 
 .adress-icon:hover {
   fill: var(--color-brand);
+}
+
+.adress-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+
+.footer::before {
+  position: absolute;
+  background-image: url(../images/bread1.png);
+  content: "";
+  background-size: 180px 120px;
+  width: 180px;
+  height: 120px;
+  bottom: 0;
+}
+
+.footer::after {
+  position: absolute;
+  background-image: url(../images/bread2.png);
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 190px;
+  bottom: 0;
+  right: 0;
+}
+
+/* modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-ptimary--white);
+  border-radius: 32px;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 40px;
+  right: 40ps;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

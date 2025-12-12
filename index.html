@@ -30,7 +30,9 @@
               <li><a class="link" href="#contacts">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-button-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -92,15 +94,17 @@
                 />
                 <div>
                   <h3 class="chef-title">Настя</h3>
-                  <p class="chef-text">Привіт, я Настя!</p>
-                  <p class="chef-text">
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p class="chef-text">
-                    Я випічу для вас <br />
-                    найсмачніші вироби!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніші вироби!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -134,7 +138,7 @@
           <div class="formats-container">
             <button class="carousel-button" type="button">
               <svg class="carousel-arrow">
-                <use href="./images/Arrow-left.svg"></use>
+                <use href="./images/symbol-defs.svg#icon-Arrow-left"></use>
               </svg>
             </button>
             <ul class="formats-list">
@@ -183,7 +187,7 @@
             </ul>
             <button class="carousel-button" type="button">
               <svg class="carousel-arrow">
-                <use href="./images/Arrow-left.svg"></use>
+                <use href="./images/symbol-defs.svg#icon-Arrow-left"></use>
               </svg>
             </button>
           </div>
@@ -274,5 +278,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-button-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
