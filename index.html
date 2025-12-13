@@ -201,6 +201,52 @@
                 Приєднуйтесь до мережі пекарень
               </h2>
               Заповни форму, щоб ми зв'язались з тобою!
+              <form name="contacnt-form" autocomplete="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label hidden" for="user-name">Ім'я</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+
+                <button class="button form-button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-terms-link" href="#"
+                    >політико конфідеційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -286,7 +332,7 @@
         <p class="modal-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="contacnt-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off" novalidate>
           <div class="form-field">
             <label class="form-label hidden" for="user-name">Ім'я</label>
             <input
