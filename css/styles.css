@@ -504,6 +504,7 @@ header {
   height: 100%;
   max-width: 880px;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-ptimary--white);
   border-radius: 32px;
 }
@@ -512,4 +513,79 @@ header {
   position: absolute;
   top: 40px;
   right: 40ps;
+}
+
+.modal-text-hero {
+  text-align: center;
+  margin: 0 auto 8px;
+  width: 624px;
+  height: 84px;
+  font-family: Poppins;
+  font-weight: 900;
+  font-style: var(--color-primary-dark);
+  font-size: 64px;
+  line-height: 84px;
+}
+
+.modal-text {
+  text-align: center;
+  margin: 0 auto;
+  color: var(--color-brand--dark);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/* form */
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid #a28268;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.17;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-input::placeholder {
+  color: #a28268;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  min-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-terms-link {
+  text-underline-offset: 2px;
+  color: var(--color-primary-dark);
 }
