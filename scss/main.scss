@@ -1,0 +1,32 @@
+@import "./utils/variables";
+@import "./utils/fonts";
+
+@import "./base";
+
+@import "./utils/utils";
+
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/header";
+
+@import "./components/hero-section";
+
+@import "./components/adventages-section";
+@import "./components/traditions-section";
+@import "./components/chef-section";
+@import "./components/format-section";
+@import "./components/carousel";
+@import "./components/contact-section";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/form";
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+}

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -332,7 +332,7 @@
         <p class="modal-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label hidden" for="user-name">Ім'я</label>
             <input
@@ -341,6 +341,7 @@
               id="user-name"
               name="user-name"
               placeholder="Ім'я"
+              required
             />
           </div>
           <div class="form-field">
@@ -351,6 +352,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
@@ -363,10 +365,11 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
-          <button class="button form-button" type="submit">
+          <button class="button form-button" type="submit" disabled>
             Замовити дзвінок
           </button>
           <p class="form-terms">
