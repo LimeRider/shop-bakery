@@ -24,21 +24,22 @@ header {
   gap: 64px;
   flex-grow: 1;
   justify-content: center;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $bp-dekstop) {
     display: none;
   }
 }
 
 .button {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $bp-dekstop) {
     display: none;
   }
 }
 
 .header__burger {
   background-color: transparent;
+  border: none;
   display: none;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $bp-dekstop) {
     display: block;
   }
 }

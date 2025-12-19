@@ -33,7 +33,7 @@
           <button class="button modal-button-open" type="button">
             Замовити дзвінок
           </button>
-          <button class="header__burger" type="button">
+          <button class="header__burger menu-btn-open" type="button">
             <svg
               width="20"
               height="14"
@@ -47,13 +47,20 @@
               />
             </svg>
           </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-section__title"><span>Сучасна</span> пекарня</h1>
+          <h1 class="hero-section__title">
+            <span class="text-brand">Сучасна</span> пекарня
+          </h1>
         </div>
       </section>
       <section class="advantages-section">
@@ -411,5 +418,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
