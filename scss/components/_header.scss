@@ -3,7 +3,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding: 16px;
+  @media screen and (min-width: $bp-dekstop) {
+    scroll-padding-top: 32px;
+  }
 }
 
 .header__container {
