@@ -5,8 +5,8 @@
 }
 
 .chef-photo {
-  width: 240.99989318847656;
-  height: 390;
+  width: 140px;
+  height: 226px;
   opacity: 1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -14,20 +14,30 @@
   border-bottom-left-radius: 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary--white),
     -16px 16px 0 2px var(--color-brand--dark);
+  @media screen and (min-width: $bp-tablet) {
+    width: 240.99989318847656px;
+    height: 390px;
+  }
 }
 
 .chefs-title {
   position: relative;
-  margin: 0 auto 80px;
+  margin: 0 auto 24px;
   max-width: 540px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .chefs-title::before,
 .chefs-title::after {
-  display: block;
-  width: 352px;
-  border: 2px solid rgba(207, 207, 188, 1);
-  content: "";
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    width: 352px;
+    border: 2px solid rgba(207, 207, 188, 1);
+    content: "";
+  }
 }
 
 .chefs-title::before {
@@ -44,6 +54,10 @@
 
 .chef-text {
   margin-bottom: 24px;
+  font-size: 14px;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+  }
 }
 
 .chef-text:last-child {
@@ -52,15 +66,27 @@
 
 .chefs-list {
   display: flex;
-  gap: 40px 30px;
+  flex-direction: column;
+  gap: 20px;
   flex: wrap;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 40px 30px;
+    flex-direction: row;
+  }
 }
 
 .chefs-item {
-  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: $bp-tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .chef-card {
   display: flex;
-  gap: 30px;
+  gap: 16px;
+  align-items: flex-start;
+  @media screen and (min-width: $bp-tablet) {
+    gap: 30px;
+  }
 }
